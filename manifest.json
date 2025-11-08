@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Code Notes",
+    "version": "1.0",
+    "description": " side panel for YouTube code notes. Pauses and resumes video automatically.",
+    "permissions": ["storage", "sidePanel", "tabs", "scripting"],
+    "host_permissions": ["*://*.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "side_panel": {
+      "default_path": "panel.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

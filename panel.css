@@ -1,0 +1,103 @@
+/* Base layout */
+body {
+    font-family: 'Fira Code', monospace;
+    background: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    margin: 0;
+    color: #0078d7;
+    font-weight: 600;
+    font-size: 1.6em;
+  }
+  
+  p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  /* Editor */
+  #editor {
+    width: 90%; /* moves it 10px from right */
+    height: 250px; /* bigger text area */
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    color: #2a2a2a;
+    resize: vertical;
+    line-height: 1.5em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  
+  /* Simulated colorful syntax effect */
+  #editor::placeholder {
+    color: #aaa;
+  }
+  
+  #editor:focus {
+    outline: none;
+    border-color: #0078d7;
+    box-shadow: 0 0 8px rgba(0, 120, 215, 0.3);
+    background: #fafcff;
+  }
+  
+  /* Footer Buttons */
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  button {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button hover states */
+  button:hover {
+    background: #0078d7;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 120, 215, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    button {
+      flex: 1;
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  
