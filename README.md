@@ -37,7 +37,8 @@ Enable Developer Mode (top-right).
 
 3. Click “Load unpacked” and select the project folder.
 
-4. Open any YouTube video and click the Notes icon.
+4. Open any YouTube video, click the Extensions icon → three dots → Open Panel
+to launch the YouTube Notes side panel.
 
 📸 Preview
 
